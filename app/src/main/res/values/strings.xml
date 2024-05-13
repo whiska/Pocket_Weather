@@ -1,4 +1,9 @@
 <resources>
     <string name="app_name">Pocket Weather</string>
-    <string name="api_key">ae48f857d6364899772f33ab7252fe9b</string>
+    <string name="humidity">Humidity</string>
+    <string name="wind">Wind</string>
+    <string name="wind_speed">%1$s Km</string>
+    <string name="celsius">%1$s \u2103</string>
+    <string name="fahrenheit">%1$s \u2109</string>
+    <string name="humidity_percent">%1$s %%</string>
 </resources>
