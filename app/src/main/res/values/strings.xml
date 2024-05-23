@@ -6,4 +6,7 @@
     <string name="celsius">%1$s \u2103</string>
     <string name="fahrenheit">%1$s \u2109</string>
     <string name="humidity_percent">%1$s %%</string>
+    <string name="hour_am_pm">%1$s %2$s</string>
+    <string name="search_your_city">Search Your City</string>
+    <string name="search_hint">city name, state or country</string>
 </resources>

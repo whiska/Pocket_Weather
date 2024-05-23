@@ -11,4 +11,7 @@ class WeatherViewModel: ViewModel() {
 
     fun getCurrentWeatherData(lat: Double, lon: Double, units: Units) =
         apiRepository.getCurrentWeatherData(lat, lon, units.name)
+
+    fun getWeatherForecast(lat: Double, lon: Double, units: Units) =
+        apiRepository.getWeatherForecast(lat, lon, units.name)
 }
