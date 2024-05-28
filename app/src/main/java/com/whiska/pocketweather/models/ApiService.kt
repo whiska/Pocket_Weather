@@ -27,5 +27,5 @@ interface ApiService {
         @Query("q") q: String,
         @Query("limit") limit: Int,
         @Query("appid") appKey: String
-    ): Call<City>
+    ): Call<CityData>
 }

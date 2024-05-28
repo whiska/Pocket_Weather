@@ -3,7 +3,7 @@ package com.whiska.pocketweather.models
 
 import com.google.gson.annotations.SerializedName
 
-class City : ArrayList<City.CityItem>(){
+class CityData : ArrayList<CityData.CityItem>(){
     data class CityItem(
         @SerializedName("country")
         val country: String = "",

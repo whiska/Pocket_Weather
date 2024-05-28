@@ -9,6 +9,7 @@ class WeatherViewModel: ViewModel() {
     private val apiRepository = WeatherRepository()
 
 
+
     fun getCurrentWeatherData(lat: Double, lon: Double, units: Units) =
         apiRepository.getCurrentWeatherData(lat, lon, units.name)
 

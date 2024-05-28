@@ -1,5 +1,6 @@
 package com.whiska.pocketweather.views
 
+import android.content.Intent
 import android.graphics.Color
 import android.os.Bundle
 import android.util.Log
@@ -45,9 +46,15 @@ class MainActivity : ComponentActivity() {
         }
 
         binding.apply {
-            var lat = 51.50
-            var lon = -0.12
-            var name = "London"
+
+            val lat = intent.getDoubleExtra("lat", 0.0)
+            val lon = intent.getDoubleExtra("lon", 0.0)
+            val name = intent.getStringExtra("name")
+
+            searchCity.setOnClickListener {
+                startActivity(Intent(this@MainActivity, CityListActivity::class.java))
+            }
+
 
             cityTxt.text = name
             progressBar.visibility = View.VISIBLE
@@ -116,7 +123,6 @@ class MainActivity : ComponentActivity() {
                             it.list.forEach {
                                 println(it)
                             }
-                            Log.e("XXX", "${it.list}")
                             forecastAdapter.differ.submitList(it.list.toMutableList())
                             forecastList.apply {
                                 layoutManager = LinearLayoutManager(
